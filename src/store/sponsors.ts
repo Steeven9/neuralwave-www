@@ -84,6 +84,11 @@ export const useSponsorsStore = defineStore("sponsors", {
             type: "bronze",
           },
           {
+            name: "ai4privacy",
+            url: "https://ai4privacy.com/",
+            type: "bronze",
+          },
+          {
             name: "b4s",
             url: "https://www.brandsforstudents.ch/",
             type: "bronze",
@@ -91,12 +96,12 @@ export const useSponsorsStore = defineStore("sponsors", {
           {
             name: "fizzy",
             url: "https://www.fizzy.ch/",
-            type: "logistics",
+            type: "logistic",
           },
           {
             name: "lura",
             url: "https://www.stampamagliette.ch/",
-            type: "logistics",
+            type: "logistic",
           },
         ],
       },
@@ -176,17 +181,17 @@ export const useSponsorsStore = defineStore("sponsors", {
           {
             name: "seegarten",
             url: "https://www.hotellido-lugano.com/",
-            type: "logistics",
+            type: "logistic",
           },
           {
             name: "masaba",
             url: "https://www.masabacoffee.ch/",
-            type: "logistics",
+            type: "logistic",
           },
           {
             name: "repair-store",
             url: "https://www.my.lugano.ch/repairstore/",
-            type: "logistics",
+            type: "logistic",
           },
         ] as Sponsor[],
       },

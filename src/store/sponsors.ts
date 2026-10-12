@@ -13,7 +13,7 @@ export interface Sponsor {
 
 export const useSponsorsStore = defineStore("sponsors", {
   state: () => ({
-    categories: ["main", "gold", "silver", "bronze", "project", "compute", "other"],
+    categories: ["main", "gold", "silver", "bronze", "project", "compute", "logistics"],
     sponsors: [
       {
         year: 2026,
@@ -26,6 +26,11 @@ export const useSponsorsStore = defineStore("sponsors", {
           {
             name: "artificialy",
             url: "https://www.artificialy.com/",
+            type: "gold",
+          },
+          {
+            name: "hasler",
+            url: "https://www.haslerstiftung.ch/",
             type: "gold",
           },
           {
@@ -59,6 +64,11 @@ export const useSponsorsStore = defineStore("sponsors", {
             type: "silver, project",
           },
           {
+            name: "sphn",
+            url: "https://www.sphn.ch/",
+            type: "project",
+          },
+          {
             name: "banana",
             url: "https://www.banana.ch/",
             type: "bronze",
@@ -74,6 +84,11 @@ export const useSponsorsStore = defineStore("sponsors", {
             type: "bronze",
           },
           {
+            name: "ai4privacy",
+            url: "https://ai4privacy.com/",
+            type: "bronze",
+          },
+          {
             name: "b4s",
             url: "https://www.brandsforstudents.ch/",
             type: "bronze",
@@ -81,7 +96,12 @@ export const useSponsorsStore = defineStore("sponsors", {
           {
             name: "fizzy",
             url: "https://www.fizzy.ch/",
-            type: "other",
+            type: "logistic",
+          },
+          {
+            name: "lura",
+            url: "https://www.stampamagliette.ch/",
+            type: "logistic",
           },
         ],
       },
@@ -161,17 +181,17 @@ export const useSponsorsStore = defineStore("sponsors", {
           {
             name: "seegarten",
             url: "https://www.hotellido-lugano.com/",
-            type: "other",
+            type: "logistic",
           },
           {
             name: "masaba",
             url: "https://www.masabacoffee.ch/",
-            type: "other",
+            type: "logistic",
           },
           {
             name: "repair-store",
             url: "https://www.my.lugano.ch/repairstore/",
-            type: "other",
+            type: "logistic",
           },
         ] as Sponsor[],
       },
@@ -180,8 +200,7 @@ export const useSponsorsStore = defineStore("sponsors", {
   actions: {
     getSponsorsByYear() {
       return (year: number): Sponsor[] => {
-        return this.sponsors.filter((obj: Sponsors) => obj.year == year)[0]
-          .sponsors;
+        return this.sponsors.filter((obj: Sponsors) => obj.year == year)[0].sponsors;
       };
     },
   },

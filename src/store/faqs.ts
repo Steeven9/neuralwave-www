@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 
 export interface Faq {
-    question: string
-    answer: string
-    category: string
+  question: string;
+  answer: string;
+  category: string;
 }
 
 export const useFaqsStore = defineStore('faqs', {
@@ -56,8 +56,8 @@ export const useFaqsStore = defineStore('faqs', {
             },
             {
                 question: "How to sign up as a team?",
-                answer: "During the registration process, you'll need to enter your team's name. Please make sure that all team members register and that they use the same team name.",
-                category: "Team Up"
+                answer: "During the registration process, you'll need to enter your team's name. Please make sure that all team members register and that they use the same team name. Also note that teams should be composed of 3-5 participants",
+                category: "Team Up",
             },
             {
                 question: "Can I sign up alone?",
@@ -108,7 +108,7 @@ export const useFaqsStore = defineStore('faqs', {
                 question: "What should I do if I have more questions or simply want to express my endless gratitude?",
                 answer: "That's so sweet! ❤️ You can reach out to us with any questions at info@neuralwave.ch.",
                 category: "Other"
-            }
+            },
         ] as Faq[]
     })
 })

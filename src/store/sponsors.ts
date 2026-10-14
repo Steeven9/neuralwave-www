@@ -13,7 +13,7 @@ export interface Sponsor {
 
 export const useSponsorsStore = defineStore("sponsors", {
   state: () => ({
-    categories: ["main", "gold", "silver", "bronze", "project", "compute", "logistics"],
+    categories: ["main", "gold", "silver", "bronze", "project", "compute", "logistic"],
     sponsors: [
       {
         year: 2026,

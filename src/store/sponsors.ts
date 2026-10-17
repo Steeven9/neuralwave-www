@@ -103,6 +103,11 @@ export const useSponsorsStore = defineStore("sponsors", {
             url: "https://www.stampamagliette.ch/",
             type: "logistic",
           },
+          {
+            name: "cerutti",
+            url: "https://www.caffe-cerutti.com/",
+            type: "logistic",
+          },
         ],
       },
       {
